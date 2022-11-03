@@ -1,0 +1,9 @@
+node_modules
+logs
+.vscode
+.idea
+package-lock.json
+.DS_Store
+statistics
+temp
+demo/output

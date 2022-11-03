@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta charset="UTF-8">
+	<head>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <img src="../yuemei/pics/bg.png"></img> -->
+		<div id="theAnimation" style="width: 100vw; height: 100vh; "></div>
+
+		<script src="https://cdn.bootcdn.net/ajax/libs/lottie-web/5.7.12/lottie.js"
+			crossorigin="anonymous"></script>
+		<script src="./dist/mdj-yuemei-animation1.js"></script>
+
+		<script>
+				var box = document.getElementById('theAnimation');
+			console.log('mdjYuemeiAnimation',mdjYuemeiAnimation)
+			mdjYuemeiAnimation(box, {}, () => {
+				console.log('finish')
+			});
+		</script>
+	</body>

@@ -1,0 +1,33 @@
+{
+  "name": "mdjchicago-console",
+  "version": "1.0.0",
+  "description": "mdj AE-Lotti bridge",
+  "main": "index.js",
+  "scripts": {
+    "testalign": "node aealign.js -i ./demo/input.json -o ./demo/output/output.json -h",
+    "build": "webpack --mode production --config yuemei/webpack.config.js",
+    "build:bdsh": "webpack --mode production --config bdsh/webpack.config.js",
+	"init:bdsh": "node aealign.js -i ./bdsh/data.json -o ./bdsh/output.json -h",
+	"init:scale": "node aealign.js -i ./scale/data.json -o ./scale/output.json -h",
+    "build:scale": "webpack --mode production --config scale/webpack.config.js",
+	"init:images": "node aealign.js -i ./images/data.json -o ./images/output.json -h",
+    "build:images": "webpack --mode production --config images/webpack.config.js",
+    "build:lottie": "webpack --mode production --config lottie/webpack.config.js",
+	"init:test": "node aealign.js -i ./test/data.json -o ./test/output.json -h",
+	"build:test": "webpack --mode production --config images/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "wangyan@meidaojia.com",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^6.2.1",
+    "lottie-web": "^5.7.6",
+    "mdjchicago": "file:core",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^4.0.0-beta.0"
+  }
+}
